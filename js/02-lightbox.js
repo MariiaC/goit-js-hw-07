@@ -21,15 +21,4 @@ function galleryItemsMarkup(items) {
     .join('');
 }
 
-galleryRef.addEventListener('click', galleryRefAddContainerClick)
-
-function galleryRefAddContainerClick(event) {
-    
-    if (!event.target.classList.contains('gallery__image')) {
-        return;
-    }
-    event.preventDefault();
-   
-}
-
  const lightbox = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
